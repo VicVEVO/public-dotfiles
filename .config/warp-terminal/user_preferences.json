@@ -1,0 +1,17 @@
+{
+  "prefs": {
+    "FontSize": "13.0",
+    "TelemetryEnabled": "false",
+    "ReceivedReferralTheme": "\"Active\"",
+    "Shortcuts": "true",
+    "AIAssistantRequestLimitInfo": "{\"limit\":100,\"num_requests_used_since_refresh\":0,\"next_refresh_time\":\"2024-02-23T21:21:24.024163Z\"}",
+    "DismissedWarpAIWarmWelcome": "true",
+    "HasAutoOpenedWelcomeFolder": "true",
+    "ExperimentId": "f2a8d2c1-3286-4c58-b941-1a6048c767ca",
+    "CrashReportingEnabled": "false",
+    "Theme": "\"Dracula\"",
+    "WelcomeTipsFeaturesUsed": "[{\"Action\":\"WarpAI\"}]",
+    "ChangelogVersions": "{\"v0.2024.02.20.08.01.stable_01\":true}",
+    "HonorPS1": "true"
+  }
+}

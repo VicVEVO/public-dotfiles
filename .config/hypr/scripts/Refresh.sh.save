@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+SCRIPTSDIR=$HOME/.config/hypr/scripts
+
+# Kill already running processes
+_ps=(waybar rofi)
+for _prs in "${_ps[@]}"; do
+    if pidof "${_prs}" >/dev/null; then
+        pkill "${_prs}"
+    fi
+done
+
+# Relaunch waybar
+waybar &
+
+# Relaunch dunst with pywal-borders
+${SCRIPTSDIR}/PywalDunst.sh &
+
+# for cava-pywal (note, need to manually restart cava once wallpaper changes)
+ln -sf "$HOME/.cache/wal/cava-colors" "$HOME/.config/cava/config" || true
+
+# little script des familles pour changer la couleur des bordures selon le bg
+awk -v new_value="$(sed -n '9p' ~/.cache/wal/colors-kitty.conf | cut -c15-20)" 'BEGIN {FS="mekouy="; OFS="mekouy="} {gsub(/[0-9a-zA-Z]+$/, new_value, $2)} 1' ~/.config/hypr/configs/Settings.conf > tmpfile && mv tmpfile ~/.config/hypr/configs/Settings.conf
+#pareil pour swaylock
+awk -v new_value="$(sed -n '9p' ~/.cache/wal/colors-kitty.conf | cut -c15-20)" 'BEGIN {FS="mekouy="; OFS="mekouy="} {gsub(/[0-9a-zA-Z]+$/, new_value, $2)} 1' ~/.config/wlogout/style.css > tmpfile && mv tmpfile ~/.config/wlogout/style.css

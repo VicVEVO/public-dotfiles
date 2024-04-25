@@ -1,0 +1,64 @@
+* {
+	background-image: none;
+	transition: 20ms;
+}
+window {
+	background-color: rgba(12, 12, 12, 0.1);
+	font-size: 14pt;
+}
+button {
+	
+	color: #a89c8c;
+  	font-size:20px;
+  	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25%;
+	border-style: solid;
+	background-color: rgba(12, 12, 12, 0.3);
+	border: 3px solid #a89c8c;
+  transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+button:focus,
+button:active,
+button:hover {
+  color: #CA9A6C;
+	background-color: rgba(12, 12, 12, 0.5);
+	border: 3px solid #CA9A6C;
+}
+
+#lock {
+	margin: 10px;
+	border-radius: 20px;
+	background-image: image(url("icons/lock_white.png"));
+}
+
+#suspend {
+	margin: 10px;
+	border-radius: 20px;
+	background-image: image(url("icons/suspend_white.png"));
+}
+
+#shutdown {
+	margin: 10px;
+	border-radius: 20px;
+	background-image: image(url("icons/shutdown_white.png"));
+}
+
+#reboot {
+	margin: 10px;
+	border-radius: 20px;
+	background-image: image(url("icons/reboot_white.png"));
+}
+
+#logout {
+	margin: 10px;
+	border-radius: 20px;
+	background-image: image(url("icons/logout_white.png"));
+}
+
+#hibernate {
+	margin: 10px;
+	border-radius: 20px;
+	background-image: image(url("icons/hibernate_white.png"));
+}
