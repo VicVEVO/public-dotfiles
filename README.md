@@ -9,4 +9,4 @@
 ## Everyday a new wallpaper, a new color palette, a new experience ₊ ⊹
 
 <a align="center" href="https://github.com/VicVEVO/public-dotfiles">
-    <img width="1920" heigth="4320" src="https://github.com/VicVEVO/public-dotfiles/blob/4f02630397c877ec220f990b15606b7fd0c5c17e/example.png"></a>
+    <img width="1920" heigth="4320" src="https://github.com/VicVEVO/public-dotfiles/blob/cb3ad6d83a85eee337304a40911c8800bc547d94/resources/example.png"></a>
